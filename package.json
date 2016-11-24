@@ -1,0 +1,22 @@
+{
+  "name": "discover-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanhuffaker/discover-react.git"
+  },
+  "author": "jhuff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanhuffaker/discover-react/issues"
+  },
+  "homepage": "https://github.com/jonathanhuffaker/discover-react#readme",
+  "dependencies": {
+    "webpack": "^1.13.3"
+  }
+}
