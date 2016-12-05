@@ -2,9 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 class Layout extends React.Component{
+	constructor(){
+		super();
+		this.name = "Jonny"
+		
+	}
 	render() {
 		return (
-			<h1> It worked again dude! On to the second vid</h1>
+			<h1> Here is {this.name}</h1>
 			);
 	}
 }
