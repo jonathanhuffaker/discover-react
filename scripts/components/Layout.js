@@ -8,7 +8,7 @@ export default class Layout extends React.Component{
 	}
 	render() {
 		return (
-			<h1> Here is {this.name}</h1>
+			<h1> Here is {this.name} </h1>
 			);
 	}
 }
