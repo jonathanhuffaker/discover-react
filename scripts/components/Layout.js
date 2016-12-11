@@ -1,14 +1,16 @@
 import React from "react";
 
+import Footer from "./Footer";
+import Header from "./Header";
+
 export default class Layout extends React.Component{
-	constructor(){
-		super();
-		this.name = "Jonny";
-		
-	}
+	
 	render() {
 		return (
-			<h1> Here is {this.name} </h1>
+			<div>
+				< Header/>
+				<Footer/>
+			</div>
 			);
 	}
 }
