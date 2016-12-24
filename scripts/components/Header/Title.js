@@ -7,7 +7,7 @@ export default class Title extends React.Component{
 		return (
 
 			<div>
-				<h1>KillerNews.net</h1>
+				<h1>Discover React</h1>
 				{this.props.children}
 				<Link to= "archives" class="btn btn-danger">archives</Link>
 				<Link to= "settings"class="btn btn-success">settings</Link>
