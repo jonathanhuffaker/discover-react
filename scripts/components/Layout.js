@@ -1,21 +1,32 @@
 import React from "react";
 import { Link } from "react-router";
 
-export default class Layout extends React.Component {
-  navigate() {
-    this.props.history.replaceState(null, "/");
-  }
+import Footer from "../components/Footer";
+import Nav from "../components/layout/Nav";
 
+export default class Layout extends React.Component {
   render() {
-    const { history } = this.props;
-    console.log(history.isActive("archives"));
-      return (
+    const { history, location } = this.props;
+    const containerStyle = {
+      marginTop: "60px"
+    };
+
+    return (
       <div>
-        <h1>KillerNews.net</h1>
-        {this.props.children}
-        <Link to="archives" activeClassName = "test" >archives</Link>
-        <Link to="settings"><button class="btn btn-success">settings</button></Link>
-        <button onClick={this.navigate.bind(this)}>featured</button>
+
+        <Nav {...{history, location}} />
+
+        <div class="container" style={containerStyle}>
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>KillerNews.net</h1>
+
+              {this.props.children}
+
+            </div>
+          </div>
+          <Footer/>
+        </div>
       </div>
 
     );
