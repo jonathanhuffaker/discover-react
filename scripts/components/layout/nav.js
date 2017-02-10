@@ -4,10 +4,11 @@ import { IndexLink, Link } from "react-router";
 export default class Nav extends React.Component {
   render() {
     const { location } = this.props;
+    const { collapsed } = this.state;
     const featuredClass = location.pathname === "/" ? "active" : "";
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
-
+    const navClass = collapsed ? "collapse" : "";
     return (
     	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     		<div class="container">
